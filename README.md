@@ -1,6 +1,7 @@
 # teremShop
 
-## Project Description
+## Project Description   
+Link: https://adnstsia.github.io/teremShop/
 
 This project is a clothing store website that I developed during my internship at Terem Company. The website aims to provide users with a seamless shopping experience for a wide range of clothing items.
 
