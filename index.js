@@ -1,11 +1,11 @@
-// Получаем кнопки "влево" и "вправо" для переключения слайдов
+// Getting the "left" and "right" buttons for slide navigation
 const prevButton = document.querySelector(".productCard_arrow_left");
 const buttons = document.querySelectorAll(".productCard_arrow");
 
-// Получаем все изображения и сохраняем их в переменной images
+// Getting all images and storing them in the variable images
 let images = Array.from(document.querySelectorAll(".productCard_photo"));
 
-// Проверяем, если изображение только одно, то блокируем кнопки
+// Checking if there's only one image, then disable the buttons
 if (images.length === 1) {
   buttons.forEach((el) => el.classList.add("arrowDisabled"));
 } else {
@@ -16,7 +16,7 @@ if (images.length === 1) {
     images.forEach((img) => {
       let imgOrder = parseInt(img.style.order);
       img.style.order =
-        (imgOrder + (button === prevButton  ? 1 : -1) + numImages) % numImages;
+        (imgOrder + (button === prevButton ? 1 : -1) + numImages) % numImages;
     });
 
     const targetImage = document.querySelector('[style*="order: 0;"]');
@@ -24,7 +24,7 @@ if (images.length === 1) {
     toggleBigClass(targetImage, bigImage);
   }
 
-  // Внутренняя функция для обработки клика на изображение
+  // Inner function to handle image click
   function handleImageClick() {
     const bigImage = document.querySelector(".big");
     if (this !== bigImage) {
@@ -35,13 +35,13 @@ if (images.length === 1) {
     }
   }
 
-  // Функция для добавления и удаления класса big
+  // Function to add or remove the 'big' class
   function toggleBigClass(targetImage, bigImage) {
     targetImage.classList.add("big");
     bigImage.classList.remove("big");
   }
 
-  // Добавляем обработчик клика на каждое изображение
+  // Adding click event handler to each image
   images.forEach((img) => {
     img.addEventListener("click", handleImageClick);
   });
