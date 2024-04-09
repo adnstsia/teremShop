@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Shop</title>
+</head>
+
+<body class="page">
+
+    <header class="header">
+        <div class="header__menu" src="images/menu.svg" alt="Найти"></div>
+
+        <ul class="header__gender">
+            <li><a class="header__gender-link" href="#">Woman</a></li>
+            <li><a class="header__gender-link header__gender-link_man" href="#">Man</a></li>
+            <li><a class="header__gender-link header__gender-link_last" href="#">New</a></li>
+        </ul>
+
+        <a class="header__logo" href="#"></a>
+
+        <div class="header__active">
+            <a class="header__active-link header__active-link_find" alt="Найти"></a>
+            <a class="header__active-link header__active-link_basket" alt="Корзина"></a>
+        </div>
+
+
+    </header>
+
+    <section class="productCard">
+        <div class="productCard__gallery">
+            <button class="productCard_arrow productCard_arrow_left">
+            </button>
+            <div class="productCard__gallery_images">
+                <img class="productCard_photo big" src="images/assets/product-image-1.png" alt="BigPhoto"
+                    style="order: 0;">
+                <img class="productCard_photo" src="images/assets/product-image-2.png" alt="Photo2" style="order: 1;">
+                <img class="productCard_photo" src="images/assets/product-image-3.png" alt="Photo3" style="order: 2;">
+                <img class="productCard_photo" src="images/assets/product-image-4.png" alt="Photo4" style="order: 3;">
+                <img class="productCard_photo" src="images/assets/product-image-5.png" alt="Photo5" style="order: 4;">
+            </div>
+            <button class="productCard_arrow productCard_arrow_right">
+            </button>
+        </div>
+
+        <div class="cardDescription">
+            <h1 class="cardDescription__title">Overalls</h1>
+            <p class="cardDescription__description">Overalls in washed organic cotton denim. Collar, button fly, and
+                adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with
+                front <span class="pockets__delete">pockets</span> and back pockets.</p>
+            <div class="choiceBlock">
+                <div class="choiceBlock__title">Color</div>
+                <input type="radio" id="option1" name="options" class="option-input option-input-1" checked>
+                <label for="option1"><span class="color-marker option-input-1 marker1"></span></label>
+
+                <input type="radio" id="option2" name="options" class="option-input option-input-2">
+                <label for="option2"><span class="color-marker option-input-2 marker2"></span></label>
+
+                <input type="radio" id="option3" name="options" class="option-input option-input-3">
+                <label for="option3"><span class="color-marker option-input-3 marker3"></span></label>
+            </div>
+
+
+            <div class="choiceBlock__size">
+                <div class="choiceBlock__title_size">Size</div>
+                <input type="radio" id="XS" name="size" class="size-input option-input-XS">
+                <label class="size-marker" for="XS">XS</label>
+
+                <input type="radio" id="S" name="size" class="size-input option-input-S" checked>
+                <label class="size-marker" for="S">S</label>
+
+                <input type="radio" id="M" name="size" class="size-input option-input-M">
+                <label class="size-marker" for="M">M</label>
+
+                <input type="radio" id="L" name="size" class="size-input option-input-L">
+                <label class="size-marker" for="L">L</label>
+
+                <input type="radio" id="XL" name="size" class="size-input option-input-XL">
+                <label class="size-marker" for="XL">XL</label>
+            </div>
+
+
+            <div class="choiceBlock__cost"><span class="choiceBlock__cost_symbol">$</span>160</div>
+
+
+            <button class="cardDescription__button">
+                Add to cart
+            </button>
+        </div>
+    </section>
+
+    <section class="offers">
+        <div class="offers__title">You may also like</div>
+        <a class="offers__view">View all</a>
+        <div class="cards">
+            <a href="#" class="offersCard">
+                <img class="offersCard__img offersCard__img_1" src="images/assets/similar-image-1.png">
+                <div class="offersCard__title">Overalls</div>
+                <p class="offersCard__cost">$ 140</p>
+            </a>
+
+            <a href="#" class="offersCard">
+                <img class="offersCard__img offersCard__img_2" src="images/assets/similar-image-2.png">
+                <div class="offersCard__title">Overalls</div>
+                <p class="offersCard__cost">$ 110</p>
+            </a>
+
+            <a href="#" class="offersCard">
+                <img class="offersCard__img offersCard__img_3" src="images/assets/similar-image-3.png">
+                <div class="offersCard__title">Jacket</div>
+                <p class="offersCard__cost">$ 70</p>
+            </a>
+
+            <a href="#" class="offersCard">
+                <img class="offersCard__img offersCard__img_4" src="images/assets/similar-image-4.png">
+                <div class="offersCard__title">Jacket</div>
+                <p class="offersCard__cost">$ 60</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer__size">
+
+            <a class="footer__logo footerLogo" href="#"></a>
+            <div>
+                <ul class="footer__links">
+                    <li class="footer__link_1"><a class="footer__link " href="#"></a></li>
+                    <li class="footer__link_2"><a class="footer__link " href="#">Shop</a></li>
+                    <li class="footer__link_3"><a class="footer__link " href="#">Delivery</a></li>
+                    <li class="footer__link_4"><a class="footer__link " href="#">Service</a></li>
+                    <li class="footer__link_5"><a class="footer__link " href="#">Sitemap</a></li>
+                    <li class="footer__link_6"><a class="footer__link " href="#">Contacts</a></li>
+                </ul>
+            </div>
+
+            <!-- footerSmLinks - общий контейнер для иконок -->
+            <div class="footerSmLinks">
+
+                <ul class="footer__links_sm">
+                    <a href="#" class="footer__links_sm_first"></a>
+                    <li>
+                        <a href="#">
+                            <div class="footer__img footer__img_1"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="footer__img footer__img_2"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="footer__img footer__img_3"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
